@@ -58,14 +58,23 @@
                         <button class="flex items-center px-3 py-5 hover:text-yellow-400 transition-colors">
                             Profil <i class="fas fa-chevron-down ml-1 text-[8px] opacity-70"></i>
                         </button>
-                        <ul class="dropdown-box absolute left-0 top-full w-56 bg-white text-gray-700 shadow-2xl rounded-b-lg border-t-4 border-yellow-400 opacity-0 invisible z-50">
+                        
+                        <ul class="dropdown-box absolute left-0 top-full w-56 bg-white text-gray-700 shadow-2xl rounded-b-lg border-t-4 border-yellow-400 opacity-0 invisible z-50 transition-all duration-300">
                             <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b border-gray-100">Sejarah</a></li>
+                            
                             <li class="group/sub relative">
-                                <a href="#" class="flex justify-between items-center px-5 py-3 hover:bg-blue-50 border-b border-gray-100">Struktur Organisasi <i class="fas fa-chevron-right text-[10px]"></i></a>
+                                <a href="#" class="flex justify-between items-center px-5 py-3 hover:bg-blue-50 border-b border-gray-100">
+                                    Struktur Organisasi <i class="fas fa-chevron-right text-[10px]"></i>
+                                </a>
+                                <ul class="absolute left-full ml-2 top-0 w-56 bg-white text-gray-700 shadow-2xl rounded-lg border-t-4 border-yellow-400 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-50">
+                                    <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b border-gray-100">Pengelola Unit</a></li>
+                                    <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 rounded-b-lg">Prodi MP</a></li>
+                                </ul>
                             </li>
+                            
                             <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b border-gray-100">Visi, Misi, dan Tujuan</a></li>
                             <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b border-gray-100">Akreditasi</a></li>
-                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50">Profil Lulusan</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 rounded-b-lg">Profil Lulusan</a></li>
                         </ul>
                     </li>
 
@@ -73,11 +82,23 @@
                         <button class="flex items-center px-3 py-5 hover:text-yellow-400 transition-colors">
                             Akademik <i class="fas fa-chevron-down ml-1 text-[8px] opacity-70"></i>
                         </button>
-                        <ul class="dropdown-box absolute left-0 top-full w-64 bg-white text-gray-700 shadow-2xl rounded-b-lg border-t-4 border-yellow-400 opacity-0 invisible z-50 overflow-y-auto max-h-[80vh]">
+                        <ul class="dropdown-box absolute left-0 top-full w-56 bg-white text-gray-700 shadow-2xl rounded-b-lg border-t-4 border-yellow-400 opacity-0 invisible z-50 transition-all duration-300">
                             <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Pedoman Akademik</a></li>
                             <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Pedoman Skripsi</a></li>
                             <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Buku Panduan Praktikum Magang</a></li>
-                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Kurikulum</a></li>
+                            <li class="group/sub relative">
+                                <a href="#" class="flex justify-between items-center px-5 py-3 hover:bg-blue-50 border-b border-gray-100">
+                                    Kurikulum <i class="fas fa-chevron-right text-[10px]"></i>
+                                </a>
+                                <ul class="absolute left-full ml-2 top-0 w-56 bg-white text-gray-700 shadow-2xl rounded-lg border-t-4 border-yellow-400 opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 z-50">
+                                    <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b border-gray-100">Alur Mata Kuliah</a></li>
+                                    <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b border-gray-100">Capaian Pembelajaran Lulusan</a></li>
+                                    <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b border-gray-100">Jadwal Perkuliahan</a></li>
+                                    <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b border-gray-100"><i>Modul Handbook</i></a></li>
+                                    <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b border-gray-100">Portofolio</a></li>
+                                    <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 rounded-b-lg">Sebaran Mata Kuliah</a></li>
+                                </ul>
+                            </li>
                             <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Kalender Akademik</a></li>
                             <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Ujian Proposal</a></li>
                             <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Munaqosah</a></li>
