@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen Pendidikan - UIN Syarif Hidayatullah Jakarta</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .nav-link:hover .dropdown-box { opacity: 1; visibility: visible; transform: translateY(0); }
+        .dropdown-box { transform: translateY(10px); transition: all 0.2s ease-out; }
+        .nav-gradient-overlay {
+            background: linear-gradient(to bottom, #1a4a75 0%, rgba(68, 105, 93, 0) 100%);
+            height: 60px;
+            width: 100%;
+            position: absolute;
+            z-index: 40;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <div class="bg-gradient-to-b from-[#0b2b46] to-[#1a4a75] shadow-xl">
+        <header class="py-5">
+            <div class="max-w-[90rem] mx-auto px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-5">
+                    <div class="bg-#0b2b46 p-1.5 rounded-xl shadow-inner">
+                        <img src="https://mp.fitkuinjkt.id/wp-content/uploads/2024/10/UIN-Syarif-Hidayatullah-Logo-KoleksiLogo.com_.com_.png" alt="Logo UIN" class="h-16 w-auto object-contain">
+                    </div>
+                    <div>
+                        <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight text-white">
+                            Manajemen <span class="text-yellow-400">Pendidikan</span>
+                        </h1>
+                        <p class="text-sm text-blue-100 font-light tracking-wide ">Fakultas Ilmu Tarbiyah dan Keguruan UIN Syarif Hidayatullah</p>
+                    </div>
+                </div>
+                
+                <div class="flex text-white items-center gap-4 text-sm font-medium">
+                    <a href="#" class="hover:text-yellow-400 transition">Hubungi Kami</a>
+                    <span class="text-gray-400">|</span>
+                    <div class="flex items-center gap-2 cursor-pointer hover:text-yellow-400 transition">
+                        <img src="https://flagcdn.com/w20/id.png" alt="ID" class="w-5"> ID
+                    </div>
+                </div>
+            </div>
+        </header>    
+
+        <nav class="sticky top-0 z-50 border-t border-white/10">
+            <div class="max-w-[95rem] mx-auto px-2">
+                <ul class="flex flex-wrap items-center justify-center text-[11px] xl:text-[12px] font-semibold tracking-wider text-white">
+                    <li><a href="#" class="block px-3 py-5 hover:text-yellow-400 transition-colors">Beranda</a></li>
+
+                    <li class="group relative nav-link">
+                        <button class="flex items-center px-3 py-5 hover:text-yellow-400 transition-colors">
+                            Profil <i class="fas fa-chevron-down ml-1 text-[8px] opacity-70"></i>
+                        </button>
+                        <ul class="dropdown-box absolute left-0 top-full w-56 bg-white text-gray-700 shadow-2xl rounded-b-lg border-t-4 border-yellow-400 opacity-0 invisible z-50">
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b border-gray-100">Sejarah</a></li>
+                            <li class="group/sub relative">
+                                <a href="#" class="flex justify-between items-center px-5 py-3 hover:bg-blue-50 border-b border-gray-100">Struktur Organisasi <i class="fas fa-chevron-right text-[10px]"></i></a>
+                            </li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b border-gray-100">Visi, Misi, dan Tujuan</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b border-gray-100">Akreditasi</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50">Profil Lulusan</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="group relative nav-link">
+                        <button class="flex items-center px-3 py-5 hover:text-yellow-400 transition-colors">
+                            Akademik <i class="fas fa-chevron-down ml-1 text-[8px] opacity-70"></i>
+                        </button>
+                        <ul class="dropdown-box absolute left-0 top-full w-64 bg-white text-gray-700 shadow-2xl rounded-b-lg border-t-4 border-yellow-400 opacity-0 invisible z-50 overflow-y-auto max-h-[80vh]">
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Pedoman Akademik</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Pedoman Skripsi</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Buku Panduan Praktikum Magang</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Kurikulum</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Kalender Akademik</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Ujian Proposal</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Munaqosah</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Survey</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">SKPI</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Pojok Karya Mahasiswa</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Penjaminan Mutu</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50">Pembelajaran</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="group relative nav-link">
+                        <button class="flex items-center px-3 py-5 hover:text-yellow-400 transition-colors">
+                            Kebijakan <i class="fas fa-chevron-down ml-1 text-[8px] opacity-70"></i>
+                        </button>
+                        <ul class="dropdown-box absolute left-0 top-full w-72 bg-white text-gray-700 shadow-2xl rounded-b-lg border-t-4 border-yellow-400 opacity-0 invisible z-50">
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">VMTS</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Tata Pamong, Tata Kelola Dan Kerjasama</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Mahasiswa</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">SDM</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Keuangan, Sarana Dan Prasarana</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Pendidikan</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Penelitian</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Pengabdian Kepada Masyarakat</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50">Keluaran Dan Capaian Tridharma</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" class="block px-3 py-5 hover:text-yellow-400 transition-colors">Dosen</a></li>
+
+                    <li class="group relative nav-link">
+                        <button class="flex items-center px-3 py-5 hover:text-yellow-400 transition-colors">
+                            Administrasi <i class="fas fa-chevron-down ml-1 text-[8px] opacity-70"></i>
+                        </button>
+                        <ul class="dropdown-box absolute left-0 top-full w-64 bg-white text-gray-700 shadow-2xl rounded-b-lg border-t-4 border-yellow-400 opacity-0 invisible z-50">
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Pendaftaran Mahasiswa Baru</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Surat Aktif Kuliah</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Surat Izin Observasi</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Surat Tugas Validator</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Surat Izin Magang</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Surat Izin Wawancara</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50">Surat Izin Penelitian</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="group relative nav-link">
+                        <button class="flex items-center px-3 py-5 hover:text-yellow-400 transition-colors text-center">
+                            Penelitian & Publikasi <i class="fas fa-chevron-down ml-1 text-[8px] opacity-70"></i>
+                        </button>
+                        <ul class="dropdown-box absolute left-0 top-full w-64 bg-white text-gray-700 shadow-2xl rounded-b-lg border-t-4 border-yellow-400 opacity-0 invisible z-50">
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Penelitian</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Hibah Penelitian</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Edu Manajerial : Jurnal MP</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Buku</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50">HKI</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" class="block px-3 py-5 hover:text-yellow-400 transition-colors">Pengabdian</a></li>
+
+                    <li class="group relative nav-link">
+                        <button class="flex items-center px-3 py-5 hover:text-yellow-400 transition-colors">
+                            Kerjasama <i class="fas fa-chevron-down ml-1 text-[8px] opacity-70"></i>
+                        </button>
+                        <ul class="dropdown-box absolute left-0 top-full w-64 bg-white text-gray-700 shadow-2xl rounded-b-lg border-t-4 border-yellow-400 opacity-0 invisible z-50">
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Kerjasama Luar Negeri</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Kerjasama Dalam Negeri</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50">Kemitraan Asosiasi</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="group relative nav-link">
+                        <button class="flex items-center px-3 py-5 hover:text-yellow-400 transition-colors">
+                            Mahasiswa & Alumni <i class="fas fa-chevron-down ml-1 text-[8px] opacity-70"></i>
+                        </button>
+                        <ul class="dropdown-box absolute right-0 top-full w-64 bg-white text-gray-700 shadow-2xl rounded-b-lg border-t-4 border-yellow-400 opacity-0 invisible z-50 text-left">
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Scholarship</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">Tracer Study</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50 border-b">HMPS MP</a></li>
+                            <li><a href="#" class="block px-5 py-3 hover:bg-blue-50">Prestasi Mahasiswa MP</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#" class="block px-3 py-5 hover:text-yellow-400 transition-colors">Fasilitas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="nav-gradient-overlay"></div>
+
+    <main>
+        <section class="relative h-[600px] flex items-center justify-center overflow-hidden">
+            <div class="absolute inset-0 bg-black/40 z-10"></div>
+            <img src="https://asset.uinjkt.ac.id/uploads/assets/images/gedung-fitk-uinjkt.jpg" class="absolute inset-0 w-full h-full object-cover">
+            
+            <div class="relative z-20 text-center px-4 max-w-4xl">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white mb-6 drop-shadow-2xl">
+                    Mencetak Pemimpin Masa Depan <span class="text-yellow-400 italic">Dunia Pendidikan</span>
+                </h2>
+                <p class="text-lg text-gray-200 mb-8 font-light">Program Studi Manajemen Pendidikan UIN Syarif Hidayatullah Jakarta</p>
+                <div class="flex justify-center gap-4">
+                    <button class="bg-yellow-400 hover:bg-yellow-500 text-[#0b2b46] px-8 py-3 rounded-full font-bold transition-all transform hover:scale-105 shadow-lg">E-Learning</button>
+                    <button class="border-2 border-white text-white hover:bg-white hover:text-[#0b2b46] px-8 py-3 rounded-full font-bold transition-all shadow-lg">Pendaftaran</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h3 class="text-3xl font-bold text-[#1a4a75] mb-6 relative pb-3">
+                            Tentang Manajemen Pendidikan
+                            <span class="absolute bottom-0 left-0 w-16 h-1.5 bg-yellow-400 rounded"></span>
+                        </h3>
+                        <p class="text-[#0b2b46] leading-relaxed mb-4 text-justify">
+                            Program Studi Manajemen Pendidikan Universitas Islam Negeri (UIN) Syarif Hidayatullah Jakarta didirikan melalui Surat Keputusan Direktur Jenderal Pendidikan Islam Kementerian Agama Republik Indonesia dengan SK: <strong>DJ.I/385/2008</strong>.
+                        </p>
+                        <p class="text-[#0b2b46] leading-relaxed mb-6 text-justify">
+                            Program ini resmi berdiri pada tahun 2008 dan berada di bawah naungan <strong>Fakultas Ilmu Tarbiyah dan Keguruan</strong>. Kami berkomitmen untuk terus mencetak tenaga profesional dalam bidang tata kelola, kepemimpinan, dan administrasi pendidikan berbasis nilai-nilai keislaman.
+                        </p>
+                        <a href="#" class="inline-flex items-center font-bold text-[#1a4a75] hover:text-yellow-500 transition-colors group">
+                            Read More <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+
+                    <div class="relative w-full rounded-[3rem] overflow-hidden shadow-2xl bg-gray-900 aspect-video flex items-center justify-center group">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors"></div>
+                        <i class="fab fa-youtube text-red-600 text-7xl cursor-pointer hover:scale-110 transition-transform z-10"></i>
+                        <div class="absolute bottom-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
+                            <p class="font-bold text-lg">Video Profil Manajemen Pendidikan UIN Jakarta</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-20 max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                        <p class="text-5xl font-black text-[#0b2b46] mb-2">316</p>
+                        <p class="text-sm font-bold text-red-400 uppercase tracking-widest bg-gray-50 py-2 rounded-xl">Mahasiswi</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                        <p class="text-5xl font-black text-[#0b2b46] mb-2">151</p>
+                        <p class="text-sm font-bold text-blue-400 uppercase tracking-widest bg-gray-50 py-2 rounded-xl">Mahasiswa</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                        <p class="text-5xl font-black text-[#0b2b46] mb-2">467</p>
+                        <p class="text-sm font-bold text-gray-600 uppercase tracking-widest bg-gray-50 py-2 rounded-xl">Total</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-gradient-to-r from-[#0b2b46] to-[#0C4C32] text-white py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div>
+                        <h4 class="text-2xl font-bold mb-6 border-b-2 border-yellow-400 inline-block pb-2">MANAJEMEN PENDIDIKAN</h4>
+                        <p class="text-blue-100 leading-relaxed text-sm mb-8 text-justify">
+                            Program Studi Manajemen Pendidikan Universitas Islam Negeri (UIN) Syarif Hidayatullah Jakarta didirikan melalui Surat Keputusan Direktur Jenderal Pendidikan Islam Kementerian Agama Republik Indonesia dengan SK: DJ.I/385/2008. Program ini resmi berdiri pada tahun 2008 dan berada di bawah Fakultas Ilmu Tarbiyah dan Keguruan.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-red-600 transition-all"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-pink-600 transition-all"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-red-700 transition-all"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-bold mb-6">Hubungi Kami</h4>
+                            <ul class="space-y-4 text-sm text-blue-100">
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-phone-alt mt-1 text-yellow-400"></i>
+                                    <span>(021) 7401925 ext 1723</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-envelope mt-1 text-yellow-400"></i>
+                                    <span>mp.fitk@apps.uinjkt.ac.id</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <i class="fas fa-map-marker-alt mt-1 text-yellow-400"></i>
+                                    <span>Kampus PPG, Jl. Raya Bojongsari No.55, Bojongsari Baru, Kec. Bojongsari, Kota Depok, Jawa Barat 16516</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-6">Lokasi Kampus</h4>
+                            <div class="rounded-2xl overflow-hidden shadow-xl border-4 border-white/10 aspect-square">
+                                <iframe 
+                                src="https://maps.google.com/maps?q=Jl.%20Raya%20Bojongsari%20No.55,%20Bojongsari%20Baru,%20Kec.%20Bojongsari,%20Kota%20Depok,%20Jawa%20Barat%2016516&t=m&z=17&output=embed&iwloc=near" 
+                                width="600" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="mt-16 pt-8 border-t border-white/5 text-center text-xs text-blue-200">
+                &copy; 2026 Manajemen Pendidikan. All Rights Reserved.
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>
